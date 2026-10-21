@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="header-logo">Elizaveta</h2>
+            <ul class="header-menu" id="menu">
+                <li ><a href="" class="menu-text">Home</a></li>
+                <li><a href="" class="menu-text" >About</a></li>
+                <li ><a href="" class="menu-text">Skills</a></li>
+                <li><a href="" class="menu-text">Servies</a></li>
+                <li><a href="" class="menu-text">Portfolio</a></li>
+                <li><a href="" class="menu-text">Contact Me</a></li>
+                <span class="burger-close" id="close">&#10006;</span>
+
+            </ul>
+                <button class="team-toggle" id="dark-theme"><img src="moon.png" alt=""></button>
+                <span class="burger-opn" id="opn">&#9776;</span>
+
+
+        </div>
+
+        <div class="hero">
+             <div class="hero-text">
+              <div class="hero-text-all">
+                <h1 class="hero-title"> Hi I am <br> Liza Iliuhina</h1>
+                <h2 class="hero-title-mini">Frontend Developer</h2>
+                <p class="hero-desc">An enthusiastic and passionate code with an eye for detals and focus to produce quality work</p>
+                </div>
+                <div class="btn">
+                <button class="contact-btn" id="opn-modal">Contact me</button>
+                <img src="send.png" alt="" class="btn-img">
+                </div>
+                <div class="scroll">
+                 <a href="" class="scroll"><span class="scroll-icon">Scroll Down ⬇</span></a>
+                </div>
+                </div>
+               <div class="hero-img">
+                <div class="img-wrapper">
+                <img src="hero.jpg" alt="" class="main-photo">
+                </div>
+                </div>
+        </div>
+
+        <div class="my-projects">
+        <div class="projects-header">
+            <div class="projects-title">
+                <h1 class="projects-main-title">My Projects</h1>
+                <h3 class="projects-last-title">A few things I've build</h3>
+            </div>
+            <div class="arrows">
+             <button class="arrow" id="arrow-left">&larr;</button>
+             <button class="arrow" id="arrow-right">&rarr;</button>
+            </div>
+         </div>
+          <div class="carousel-track">
+           <div class="carousel">
+            <a href="" class="carusele-slide"><img src="projectOne.png" alt="" class="projects-icon">Project 1<br>HTML Css JavaSkript</a>
+            <a href="" class="carusele-slide"><img src="project2.png" alt="" class="projects-icon">Project 2 <br> NoteJS Css TepeSkript</a>
+            <a href="" class="carusele-slide"><img src="project3.png" alt="" class="projects-icon">Project 3 <br> Pythone HTML CSS</a>
+          </div>
+          </div>
+
+          </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-window" id="modal">
+
+        <div class="modal-title">
+            <span class="modal-close" id="close-modal">&#10006;</span>
+            <h1 class="modal-title-one">Get in touch</h1>
+            <h2 class="modal-title-two">Have a qestion or a project in mind?</h2>
+        </div>
+        <form action="" class="form">
+            <label for="user-name" class="form-label">Your name</label>
+            <input type="text" placeholder="jone smith" class="form-input">
+            <label for="user-email" class="form-label">Your email</label>
+            <input type="email" placeholder="jone@example.com" class="form-input">
+            <label for="user-message" class="form-label">Message</label>
+            <textarea placeholder="Tell me about your project" class="form-input form--big"></textarea>
+        </form>
+            <div class="btn">
+                <button class="contact-btn" id="send-message">Send message</button>
+                <img src="send.png" alt="" class="btn-img">
+                </div>
+                <div class="form-details">
+                 Your detals will only be used to replay
+                </div>
+    </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
