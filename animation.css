@@ -1,0 +1,29 @@
+@keyframes addBlocks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.hero-text {
+  opacity: 0;
+  animation: addBlocks 5s ease forwards;
+  color: blueviolet;
+}
+.hero-img {
+  opacity: 0;
+  animation: addBlocks 5s ease forwards;
+}
+.header {
+  opacity: 0;
+  animation: addBlocks 5s ease forwards;
+}
+.projects-header {
+  opacity: 0;
+  animation: addBlocks 5s ease forwards;
+}
+.projects-icon {
+  opacity: 0;
+  animation: addBlocks 5s ease forwards;
+}
