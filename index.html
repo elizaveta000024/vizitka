@@ -43,7 +43,7 @@
             <img src="images/send.png" alt="" class="btn-img" />
           </div>
           <div class="scroll">
-            <a href="" class="scroll"
+            <a href="#my_projects" class="scroll"
               ><span class="scroll-icon">Scroll Down ⬇</span></a
             >
           </div>
@@ -55,7 +55,7 @@
         </div>
       </div>
 
-      <div class="my-projects">
+      <div class="my-projects" id="my_projects">
         <div class="projects-header">
           <div class="projects-title">
             <h1 class="projects-main-title">My Projects</h1>
@@ -105,26 +105,54 @@
         </div>
         <form action="" class="form">
           <label for="user-name" class="form-label">Your name</label>
-          <input type="text" placeholder="jone smith" class="form-input" />
+          <input
+            type="text"
+            placeholder="jone smith"
+            class="form-input"
+            id="input-name"
+          />
           <label for="user-email" class="form-label">Your email</label>
           <input
             type="email"
             placeholder="jone@example.com"
             class="form-input"
+            id="input-email"
           />
           <label for="user-message" class="form-label">Message</label>
           <textarea
             placeholder="Tell me about your project"
             class="form-input form--big"
+            id="input-text"
           ></textarea>
         </form>
         <div class="btn">
-          <button class="contact-btn" id="send-message">Send message</button>
+          <button class="contact-btn" id="input-btn">Send message</button>
           <img src="send.png" alt="" class="btn-img" />
         </div>
         <div class="form-details">Your detals will only be used to replay</div>
       </div>
     </div>
+
+    <footer class="vizitka-footer">
+      <div class="footer-text">
+        <h2>Let's Stay Connected</h2>
+        <p>Find me on social media:</p>
+      </div>
+      <div class="social-links">
+        <div class="media">
+          <a href="">VK</a>
+          <a href="">Connect &rarr;</a>
+        </div>
+        <div class="media">
+          <a href="">WhatsApp</a>
+          <a href="">Connect &rarr;</a>
+        </div>
+        <div class="media">
+          <a href="">Instagram</a>
+          <a href="">Connect &rarr;</a>
+        </div>
+      </div>
+    </footer>
     <script src="java.js"></script>
   </body>
 </html>

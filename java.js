@@ -6,6 +6,7 @@ const arrowLeft = document.getElementById("arrow-left");
 const arrowRight = document.getElementById("arrow-right");
 const menuA = document.querySelectorAll(".menu-text");
 const heroImg = document.getElementById("imgWrap");
+//dark theme and opn btn
 openBtn.addEventListener("click", function opnBurger() {
   menu.classList.add("active");
 });
@@ -28,6 +29,7 @@ darkBtn.addEventListener("click", function addDark() {
     localStorage.setItem("theme", "light");
   }
 });
+//local storage
 const savedTheme = localStorage.getItem("theme");
 if (savedTheme === "dark") {
   document.body.classList.add("dark-theme");
@@ -37,6 +39,7 @@ if (savedTheme === "light") {
   document.body.classList.remove("dark-theme");
   darkBtn.classList.remove("white-btn");
 }
+
 //Modal window
 const messageSend = document.getElementById("send-message");
 const closeModal = document.getElementById("close-modal");
@@ -48,6 +51,7 @@ opnModal.addEventListener("click", function modalWindow() {
 closeModal.addEventListener("click", function closeWindow() {
   modalPage.classList.remove("open");
 });
+
 //carusele
 const track = document.querySelector(".carousel");
 const slides = document.querySelectorAll(".carusele-slide");
@@ -58,3 +62,32 @@ function move(step) {
 }
 document.querySelector("#arrow-right").onclick = () => move(1);
 document.querySelector("#arrow-left").onclick = () => move(-1);
+
+//form validation
+const inputName = document.getElementById("input-name");
+const inputEmail = document.getElementById("input-email");
+const inputText = document.getElementById("input-text");
+const inputBtn = document.getElementById("input-btn");
+function ValidForm() {
+  inputBtn.addEventListener("click", function () {
+    if (inputName.value == "") {
+      alert("Text your name ");
+    } else if (
+      inputName.value.length < 2 ||
+      inputName.value.charAt(0) !== inputName.value.charAt(0).toUpperCase()
+    ) {
+      alert(
+        "First sumbol of your name shoul be in upper case and your name should includes more that two sumbols",
+      );
+    } else if (
+      inputEmail.value == "" ||
+      !inputEmail.value.includes("@") ||
+      inputEmail.value.indexOf(".") < inputEmail.value.indexOf("@")
+    ) {
+      alert("Area is empty or you need @ and . after @");
+    } else if (inputText.value == "") {
+      alert("Message area is empty ");
+    }
+  });
+}
+ValidForm();

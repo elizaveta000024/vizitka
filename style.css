@@ -2,6 +2,7 @@
 @import "modal.css";
 @import "carousel.css";
 @import "animation.css";
+@import "footer.css";
 *,
 *::before,
 *::after {
@@ -90,15 +91,18 @@ body {
 }
 .hero-title {
   font-size: 50px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 .hero-title-mini {
   font-size: 30px;
   font-weight: 400;
   padding: 10px 0;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 .hero-desc {
   font-size: 20px;
   width: 65%;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 .btn {
   display: flex;
@@ -110,6 +114,7 @@ body {
   width: max-content;
   background-color: blueviolet;
   border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 .contact-btn {
   color: white;
@@ -130,6 +135,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 .img-wrapper-darc {
   width: 420px;
